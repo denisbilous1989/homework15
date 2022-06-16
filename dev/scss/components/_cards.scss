@@ -1,0 +1,43 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 75px 0 0 0;
+
+
+      li {
+        width: 30%;
+      }
+
+      .card {
+        text-align: center;
+        padding: 10px 40px;
+        font-size: $base_font_size - 2px;
+        line-height: $base_line_height - 5px;
+
+        &__title {
+          font-size: $base_font_size + 5px;
+          line-height: $base_line_height + 5px;
+        }
+
+        &__content {
+          a {
+            text-decoration: underline;
+            transition: all 0.5s;
+      
+                &:hover {
+                  text-shadow: 2px 2px 4px $black;
+                  color: $orange;
+                  text-decoration: none;
+                }
+          }
+        }
+
+        &__footer:hover {
+          text-shadow: 2px 2px 4px $black;
+          color: $orange;
+          text-decoration: none;
+        }
+      }
+}
+

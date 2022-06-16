@@ -1,0 +1,52 @@
+.orange_section {
+  padding: 100px 75px;
+  background: $bg_orange;
+
+      h2 {
+        margin: 0 0 80px 0;
+        font-size: $base_font_size + 30px;
+        line-height: $base_line_height * 2;
+        text-align: center;
+      }
+
+      span {
+        display: block;
+      }
+
+      .one_column {
+        font-size: $base_font_size;
+        line-height: $base_line_height; 
+        padding: 0;
+        flex-direction: column;
+
+        .card {
+
+          &__title {
+            padding: 0 200px;
+            margin-bottom: 29px;
+          }
+          &__content {
+            padding: 0;
+            margin-bottom: 54px;
+          }
+        }
+      }
+}
+
+.orange_section ~ .orange_section {
+  padding: 120px 290px 160px;
+}
+
+.logo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+      li {
+        transition: all 0.5s;
+
+          &:hover {
+            transform: scale(1.3);
+          }
+      }
+}

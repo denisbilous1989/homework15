@@ -1,0 +1,31 @@
+.white_section {
+  padding: 150px 0;
+
+  .cards {
+    .card {
+      text-align: left;
+
+      &__visual {
+        height: 200px;
+      }
+
+      &__title {
+        font-size: $base_font_size + 10px;
+        line-height: $base_line_height + 10px;
+      }
+
+      &__content {
+        font-size: $base_font_size;
+        line-height: $base_line_height;
+      }
+      &__footer {
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.white_section ~ .white_section {
+  padding: 165px 209px;
+}
